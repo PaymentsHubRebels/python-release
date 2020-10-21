@@ -1,6 +1,9 @@
 name: python
 blobstore:
-  provider: local
+  provider: s3
   options:
-    blobstore_path: /tmp/blobs
+    bucket_name: python-boshrelease-blobstore
+    region: eu-west-2
+    host: s3-eu-west-2.amazonaws.com
+    
 
